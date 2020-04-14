@@ -1,4 +1,4 @@
-data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/data.csv", sep = ",", header = TRUE)
+data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/DA LAB/data.csv", sep = ",", header = TRUE)
 data
 # Find Min 
 min(data$nve_l)
@@ -116,7 +116,7 @@ outlierKD(data,data$per_b)
 outlierKD(data,data$per_d)
 
 #Plot 1
-data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/data.csv", sep = ",", header = TRUE)
+data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/DA LAB/data.csv", sep = ",", header = TRUE)
 dev.new(width=5, height=4, unit="in")
 plot(data$year,data$nve_l, type="l", col="green", lwd=5, xlab="years", ylab="No. of Births")
 #lines(data$year,data$nve_d, col="red", lwd=5)
@@ -124,7 +124,7 @@ title("No. of Live Births from 2011 to 2016")
 #legend("topright",c("Births","nve_ds"), lwd=c(5,2), col=c("green","red"), y.intersp=1.5)
 
 #Plot 2
-data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/data.csv", sep = ",", header = TRUE)
+data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/DA LAB/data.csv", sep = ",", header = TRUE)
 dev.new(width=5, height=4, unit="in")
 plot(data$year,data$c_b, type="b", col="green", lwd=5, xlab="years", ylab="birth rate/nve_d rate",ylim=range(data$c_d,data$c_b))
 lines(data$year,data$c_d,type="b",col="red", lwd=5)
@@ -132,7 +132,7 @@ title("Birth and nve_d rates from 2011 to 2016")
 legend("topright",c("Birth rate","nve_d rate"), lwd=c(5,2), col=c("green","red"), y.intersp=1.5)
 
 #Plot 3
-data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/data.csv", sep = ",", header = TRUE)
+data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/DA LAB/data.csv", sep = ",", header = TRUE)
 dev.new(width=5, height=4, unit="in")
 plot(data$year,data$per_b, type="b", col="green", lwd=5, xlab="years", ylab="birth %/nve_d % ",ylim=range(data$per_d,data$per_b))
 lines(data$year,data$per_d,type="b",col="red", lwd=5)
@@ -140,6 +140,6 @@ title("Birth and nve_d percentage from 2011 to 2016")
 legend("topright",c("Birth %","nve_d %"), lwd=c(5,2), col=c("green","red"), y.intersp=1.5)
 
 #Plot 4
-data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/data.csv", sep = ",", header = TRUE)
-dev.new(width=5, height=4, unit="in")
-boxplot(data$nve_s ~ data$year, xlab = "years",ylab = "No.of still Births", main = "still birth data")
+  data <- read.table("/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/DA LAB/data.csv", sep = ",", header = TRUE)
+  dev.new(width=5, height=4, unit="in")
+  boxplot(data$nve_s ~ data$year, xlab = "years",ylab = "No.of still Births", main = "still birth data")

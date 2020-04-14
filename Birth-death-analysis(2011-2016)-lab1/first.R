@@ -3,4 +3,4 @@ data <- extract_areas("/home/kapil/desktop/study material notes/6TH SEM/Data Ana
 data=data[[1]]
 data
 colnames(data)=c('year','nve_l','nve_s','nve_d','c_b','c_d','per_b','per_d')
-write.csv(data,"/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/data.csv",row.names=FALSE)
+write.csv(data,"/home/kapil/desktop/study material notes/6TH SEM/Data Analysis/DA LAB/data.csv",row.names=FALSE)
